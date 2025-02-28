@@ -1,10 +1,32 @@
-### (a) Definitions of Elasticity and Scalability in Cloud Computing for Deep Learning (10 points)
+(A)
 
-- **Elasticity** refers to the cloud's ability to automatically adjust computing resources based on demand. For deep learning, this means dynamically scaling GPUs, TPUs, or CPUs up or down depending on workload intensity, ensuring efficient resource utilization and cost-effectiveness.
+ 1. **Elasticity**:
+Elasticity in cloud computing means that the system can **automatically adjust** the amount of computing power it uses based on how much is needed at any given time.
 
-- **Scalability** is the ability of a cloud system to handle increasing workloads by adding more resources, either **vertically** (upgrading existing resources like more powerful GPUs) or **horizontally** (adding more instances). In deep learning, scalability ensures that large-scale training models can run efficiently across multiple nodes.
+- **In Deep Learning**: When you're training a deep learning model, sometimes you need more computational power (e.g., more GPUs) for heavy tasks like training on large datasets, and sometimes you need less when you're just using the model for predictions (inference).
+- **Example**: If you’re training a model and suddenly need more computing power because the task becomes more complex, the cloud will **automatically add more resources** (like extra GPUs or CPUs). Once the task is finished, the cloud will **remove unnecessary resources** to save cost.
 
-### (b) Comparison of AWS SageMaker, Google Vertex AI, and Microsoft Azure Machine Learning Studio (10 points)
+In simple terms, elasticity means the system can **grow or shrink** its resources based on demand.
+
+2. **Scalability**:
+Scalability is about a system’s **ability to handle more work** by adding more resources as the demand grows.
+
+- **In Deep Learning**: 
+  - **Vertical Scaling** (Scaling Up): Adding more power to an existing resource. For example, you could use a more powerful GPU to train a deep learning model faster.
+  - **Horizontal Scaling** (Scaling Out): Adding more machines or resources to share the workload. For example, if one GPU isn't enough, you could add several GPUs or machines to help train the model at the same time.
+  
+- **Example**: If you're training a very large model, you can scale horizontally by adding more GPUs across multiple machines to share the training load. This way, the cloud can handle the bigger workload efficiently.
+
+In simple terms, scalability is about the system’s ability to **expand** (more resources) as the work increases.
+
+Key Difference:
+- **Elasticity** is about the **system automatically adjusting** resources based on current demand.
+- **Scalability** is about the system’s ability to **add more resources** when the workload increases.
+- Deep learning models can require a lot of computing power, and these features help manage that efficiently in the cloud.
+- **Elasticity** helps save costs by using only the resources you need at any time.
+- **Scalability** ensures that as your models or datasets grow, the cloud infrastructure can grow with them.
+
+(B) Comparison of AWS SageMaker, Google Vertex AI, and Microsoft Azure Machine Learning Studio 
 
 | Feature                 | AWS SageMaker                | Google Vertex AI               | Microsoft Azure Machine Learning Studio |
 |-------------------------|-----------------------------|--------------------------------|-----------------------------------------|
