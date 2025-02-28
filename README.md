@@ -1,7 +1,6 @@
 # NeuralNetwork_HW2
-
-
-
+HAMSINI KATLA
+700772580
 
 
 # 2 Convolution Operations with Different Parameters
