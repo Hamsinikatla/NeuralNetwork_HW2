@@ -1,0 +1,18 @@
+### (a) Definitions of Elasticity and Scalability in Cloud Computing for Deep Learning (10 points)
+
+- **Elasticity** refers to the cloud's ability to automatically adjust computing resources based on demand. For deep learning, this means dynamically scaling GPUs, TPUs, or CPUs up or down depending on workload intensity, ensuring efficient resource utilization and cost-effectiveness.
+
+- **Scalability** is the ability of a cloud system to handle increasing workloads by adding more resources, either **vertically** (upgrading existing resources like more powerful GPUs) or **horizontally** (adding more instances). In deep learning, scalability ensures that large-scale training models can run efficiently across multiple nodes.
+
+### (b) Comparison of AWS SageMaker, Google Vertex AI, and Microsoft Azure Machine Learning Studio (10 points)
+
+| Feature                 | AWS SageMaker                | Google Vertex AI               | Microsoft Azure Machine Learning Studio |
+|-------------------------|-----------------------------|--------------------------------|-----------------------------------------|
+| **Ease of Use**        | Automated ML, Jupyter notebooks, and integrated tools | User-friendly UI with AutoML and managed services | Drag-and-drop interface and Jupyter integration |
+| **Compute Power**      | Supports GPUs (NVIDIA), TPUs (limited) | Strong TPU support, GPUs available | Supports NVIDIA GPUs and Azure AI supercomputing |
+| **AutoML Capabilities** | Auto-training and hyperparameter tuning | Strong AutoML for training and deployment | AutoML for model selection and tuning |
+| **Integration**        | Best with AWS services (S3, Lambda, EC2) | Integrates with Google Cloud (BigQuery, DataFlow) | Works seamlessly with Azure services (Blob Storage, Cognitive Services) |
+| **Deployment**        | Real-time and batch inference with built-in endpoints | Managed endpoints for deployment with Vertex AI Prediction | Supports container-based deployment and real-time inference |
+| **Pricing**           | Pay-as-you-go, spot instance savings | Competitive pricing, TPU-based models cost-effective | Pay-as-you-go with enterprise options |
+
+Each platform offers robust deep learning capabilities, with **AWS SageMaker** excelling in flexibility, **Google Vertex AI** in AI automation and TPUs, and **Azure ML** in enterprise integration. The choice depends on the user's ecosystem and computing needs.
